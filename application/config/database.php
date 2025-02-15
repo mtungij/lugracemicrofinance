@@ -79,6 +79,7 @@ $db['default'] = array(
 	'username' => 'james',
 	'password' => 'phamasoft',
 	'database' => 'lugrace_db',
+	// 'database' => 'mbezi_db',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

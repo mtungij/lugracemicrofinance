@@ -1,12 +1,15 @@
 
 docker run -it -d \
-  --label traefik.http.routers.emidmbezi.rule=Host\(\`emidmbezi.loan-pocket.com\`\) \
-  --label traefik.http.routers.emidmbezi.tls.certresolver=lets-encrypt \
-  --label traefik.http.routers.emidmbezi.tls=true \
-  --label traefik.http.routers.emidmbezi.service=emidmbezi-credit-http \
-  --label traefik.http.services.emidmbezi-credit-http.loadbalancer.server.port=80 \
-  --name emidmbezi \
+  --label traefik.http.routers.lugracemicrofinance.rule=Host\(\`lugracemicrofinance.com\`\) \
+  --label traefik.http.routers.lugracemicrofinance.tls.certresolver=lets-encrypt \
+  --label traefik.http.routers.lugracemicrofinance.tls=true \
+  --label traefik.http.routers.lugracemicrofinance.service=lugracemicrofinance-credit-http \
+  --label traefik.http.services.lugracemicrofinance-credit-http.loadbalancer.server.port=80 \
+  --name lugracemicrofinance \
   --network web \
   --restart always \
   --expose 80 \
-   emasanga/mikoposoft_nack:may19
+  emasanga/mikoposoft:may13
+
+
+   
