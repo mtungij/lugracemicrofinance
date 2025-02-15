@@ -777,7 +777,7 @@ $sqldata="UPDATE `tbl_ac_company` SET `comp_balance`= '$total_remain' WHERE  `tr
 			  //    exit();
 			$this->load->model('queries');
 			if ($this->queries->insert_employee($data)) {
-				 $this->session->set_flashdata('massage','Eployee Registered successfully Password = 1234');
+				 $this->session->set_flashdata('massage','Employee Registered successfully with default Password = 1234');
 			}else{
 				$this->session->set_flashdata('error','Failed');
 			}
